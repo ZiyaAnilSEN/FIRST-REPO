@@ -1,0 +1,51 @@
+
+"""       #burdan itibaren...
+
+from twython import Twython
+from auth import (
+consumer_key,
+consumer_secret,
+access_token,
+access_secret,
+)
+
+twitter = Twython(
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_secret
+)
+
+  
+
+message = "First coding tweet!!!"
+twitter.update_status(status=message)
+print("Tweeted: %s" % message)
+
+      
+
+"""        #buraya kadar normal tweet atma
+
+
+
+"""        #burdan itibaren...
+
+messages = [
+    "Message 1",
+    "Message 2",
+    "Message 3",
+    "Message 4",
+    "Message 5",
+    "Message 6!",
+]
+
+message = random.choice(messages)
+twitter.update_status(status=message)
+print("Tweeted: " + message)
+
+"""   #buraya kadar verilen tweetlerden random olarak bi tanesini atma
+
+
+
+
+
