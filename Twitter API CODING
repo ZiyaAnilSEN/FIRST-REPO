@@ -73,16 +73,16 @@ try:
 except tweepy.TweepError:
     print('Hata')
 
-public_tweets = api.user_timeline(screen_name="USER_NAME", count=10)  #  Kullanıcının 30 adet tweeti
+public_tweets = api.user_timeline(screen_name="USER_NAME", count=10)  #  Kullanıcının 10 adet tweeti
 for tweet in public_tweets:
     print(tweet.text)
 
 
-#buraya kadar: Kullanıcının ilk 5 tweetini çekme kodu
+#buraya kadar: Kullanıcının ilk 10 tweetini çekme kodu
 #"""
 
 
-"""
+"""     #bu satırdan itibaren...
 
                         #YENİ DOSYA AÇIP ORAYA RANDOM HASHTAG YAZ
 
@@ -112,7 +112,7 @@ for tweet in tweepy.Cursor(api.search,q='#TWEET_NAME',count=3,
 csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
 
 """
-
+       #bu satıra kadar belirlenen bir tarihten bugüne kadar bir hashtag ile atılan tüm tweetleri çeker.
 
 
 
