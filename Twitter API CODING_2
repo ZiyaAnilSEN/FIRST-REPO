@@ -43,7 +43,7 @@ message = random.choice(messages)
 twitter.update_status(status=message)
 print("Tweeted: " + message)
 
-"""   #buraya kadar verilen tweetlerden random olarak bi tanesini atma
+"""   #buraya kadar verilen tweetlerden random olarak bir tanesini atma
 
 
 
